@@ -13,18 +13,20 @@ class Form extends Component {
     }
 
     submit = (event) => {
-        event.preventDefault();
+        event.preventDefault(); // prevents the form to go to its action script
 
         let errors = {};
-
+        // check each field, if error caught add its error property in errors{}
         if(this.state.username === '') {
             errors.userNameError = "Username cannot be empty";
         }
         if(this.state.email === '') {
             errors.emailError = "Email cannot be empty";
         }
-        if(this.state.password.length < 8) {
-            errors.passwordError = "Password must include min of 8 chars"
+        // test(), match()
+        let regex = /\d/
+        if(this.state.password.length <= 8 || !regex.test(this.state.password)) {
+            errors.passwordError = "Password must include min of 8 chars & a digit"
         }
 
         this.setState({ errors });
