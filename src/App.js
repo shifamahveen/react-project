@@ -1,14 +1,13 @@
 import './App.css';
-import Form from './components/Form';
+import PrevState from './hooks/PrevState';
 
 function App() {
 
   return (
     <>
-      <Form />
+      <PrevState />
     </>
   )
 }
-
 
 export default App;
