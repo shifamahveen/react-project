@@ -13,7 +13,7 @@ class Timer extends Component {
     }
 
     componentDidMount() {
-        this.id = setInterval(this.tick, 2000);
+        this.id = setInterval(this.tick, 1000);
     }
 
     componentDidUpdate() {

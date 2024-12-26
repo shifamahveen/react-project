@@ -1,11 +1,12 @@
 import './App.css';
-import PrevState from './hooks/PrevState';
+import Timer from './hooks/Timer'
 
 function App() {
 
   return (
     <>
-      <PrevState />
+    {/* react router */}
+      <Timer />
     </>
   )
 }
