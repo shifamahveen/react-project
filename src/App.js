@@ -1,12 +1,11 @@
 import './App.css';
-import Timer from './hooks/Timer'
+import Effect from './hooks/Effect'
 
 function App() {
 
   return (
     <>
-    {/* react router */}
-      <Timer />
+      <Effect name="Alex" />
     </>
   )
 }
