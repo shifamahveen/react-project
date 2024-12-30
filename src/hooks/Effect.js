@@ -5,9 +5,9 @@ const Effect = () => {
     const [color, setColor] = useState('blue');
 
     // no deps array
-    useEffect(() => {
-        console.log("Component rendered");
-    })
+    // useEffect(() => {
+    //     console.log("Component rendered");
+    // })
     
     // Empty deps array
     useEffect(() => {
