@@ -1,12 +1,14 @@
-import './App.css';
-import RefPrevState from './hooks/RefPrevState'
+import { createContext } from 'react';
+import Parent from './hooks/Parent';
 
-function App() {
+// create context
+export const GlobalVar = createContext();
 
+const App = () => {
   return (
-    <>
-      <RefPrevState />
-    </>
+      <GlobalVar.Provider value="xyz" >
+        <Parent />
+      </GlobalVar.Provider>
   )
 }
 
