@@ -9,18 +9,18 @@ const Callback = () => {
         setCount(count+1)
     }
 
-    const addTask = useCallback(() => {
+    const addTask = useCallback(( ) => {
         setTodo(prev => [...prev, 'New Task'])
     }, [todo]);
 
   return (
     <div>
       <Task todo={todo} addTask={addTask} />
-
+ 
       <h1>Count: {count}</h1>
       <button onClick={increment}>Increment</button>
     </div>
   )
 }
 
-export default Callback
+export default Callback;

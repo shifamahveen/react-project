@@ -1,9 +1,9 @@
 import { createContext } from 'react';
-import Callback from './hooks/Callback';
+import Translator from './hooks/Translator';
 
 const App = () => {
   return (
-      <Callback />
+      <Translator />
   )
 }
 
