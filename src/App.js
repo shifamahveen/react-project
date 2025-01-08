@@ -1,9 +1,9 @@
 import { createContext } from 'react';
-import Translator from './hooks/Translator';
+import LayoutEffect from './hooks/LayoutEffect';
 
 const App = () => {
   return (
-      <Translator />
+      <LayoutEffect />
   )
 }
 
