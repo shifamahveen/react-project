@@ -12,11 +12,13 @@ const LayoutEffect = () => {
   return (
     <div>
         <h1>Hello</h1>
-        {Array(20000).fill('').map((item, index) => {
-            <h4 key={index}>
-                {Math.floor(Math.random() * 10)}
-            </h4>
+        <ul>
+        {Array(200).fill('').map((item, index) => {
+            <li key={index}>
+                {Math.floor(Math.random() * 3)}
+            </li>
         })}
+        </ul>
     </div>
   )
 }

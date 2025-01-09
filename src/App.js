@@ -1,9 +1,14 @@
-import { createContext } from 'react';
-import LayoutEffect from './hooks/LayoutEffect';
+import { useState } from 'react';
+import useLocalStorage from './custom/useLocalStorage';
 
 const App = () => {
+  const [color, setColor] = useLocalStorage('color', '');
+  
   return (
-      <LayoutEffect />
+      <>
+        <input type='text' value={color} onChange={(event) => setColor(event.target.value)} />
+        <h1>Color: {color}</h1>
+      </>
   )
 }
 
